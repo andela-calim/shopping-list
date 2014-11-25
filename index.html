@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="css/main.css">
+		<title>Shopping List App</title>
+	</head>
+	<body>
+		<div id="container">
+			<header>
+				<h1>Shopping List Application</h1>
+			</header>
+			<section id="add-item">
+				<fieldset>
+					<legend>
+						<label for="new-task" class="headings">Add an Item</label>
+					</legend>
+					<input type="text" id="new-task">
+					<button type="button" id="add-button">Add</button>
+				</fieldset>
+			</section>
+			<section>
+			<fieldset>
+				<legend><h3 class="headings">Pending Items</h3></legend>
+				<ul id="incomplete-tasks">
+					<li>
+						<input type="checkbox">
+						<label>Test One</label>
+						<button type="button" class="delete">Delete</button>
+					</li>
+					<li>
+						<input type="checkbox">
+						<label>Test Two</label>
+						<button type="button" class="delete">Delete</button>
+					</li>
+
+				</ul>
+			</fieldset>
+			</section>
+			<section>
+			<fieldset>
+				<legend><h3 class="headings">Completed Items</h3></legend>
+				<ul id="completed-tasks">
+					<li>
+						<input type="checkbox" checked>
+						<label>Test hundred</label>
+						<button type="button" class="delete">Delete</button>
+					</li>
+				</ul>
+			</fieldset>
+			</section>
+		</div>
+		<script type="text/javascript" src="js/shopping-list.js"></script>
+	</body>
+</html>
