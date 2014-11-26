@@ -47,12 +47,15 @@ h1 {
 	text-align: center;
 }
 
-
 input {
 	margin: 0.8em 0;
 	padding: 0.4em 0.3em;
 	border-radius: 5px;
 }
+input[type="checkbox"], label {
+	margin: 0 5px;
+}
+
 #new-task {
 	width: 75%;
 }
@@ -60,7 +63,6 @@ input {
 button:hover {
 	box-shadow: 0.3px 0.6px 1px 1px rgba(0,0,0,0.5), -0.3px -0.4px 1px 1px rgba(0,0,0,0.5);
 }
-
 button {
 	background-color: skyblue;
 	font-size: 1.3em;
@@ -78,10 +80,6 @@ ul > li {
 	margin: 0 auto;
 	padding: 15px 10px;
 	border: 1px solid #000;
-}
-
-#incomplete-tasks input[type="checkbox"], #incomplete-tasks label {
-	margin: 0 5px;
 }
 
 .delete {
