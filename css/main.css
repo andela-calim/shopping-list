@@ -1,9 +1,12 @@
 
 @import 'css-reset.css';
 
+/************************
+**************^GENERALS*/
 body {
 	width: 100%;
 	font-family: sans-serif;
+	background-color: grey;
 }
 
 #container {
@@ -24,25 +27,47 @@ p, section > label {
 	display: block;
 }
 
-h1 {
-	padding: 1.3em 0 0.1em;
-	font-size: 2em;
-}
-
 .headings {
 	font-size: 1.5em;
 	padding: 0 0.5em;
 	color: red;
 }
 
+
+/************************
+**************SPECIFICS*/
+h1 {
+	padding: 1.3em 0 0.1em;
+	font-size: 2em;
+}
+
+
 input {
-	margin: 1em 0;
+	margin: 0.8em 0;
+	padding: 0.4em 0.3em;
+}
+
+button:hover {
+	box-shadow: 0.3px 0.6px 1px 1px rgba(0,0,0,0.5), -0.3px -0.4px 1px 1px rgba(0,0,0,0.5);
+}
+
+button {
+	background-color: skyblue;
+	font-size: 1.3em;
+	padding: 0.2em 0.5em;
+	border: none;
+	border-radius: 5px;
+}
+
+li {
+	margin: 0.5em 1em;
+	padding-right: 2em;
+	float: left;
 }
 
 #completed-tasks li {
 	text-decoration: line-through;
 }
-
 
 fieldset {
 	margin: 0 auto;
