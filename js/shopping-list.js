@@ -24,11 +24,12 @@ var shoppingApp = {
 	bindTaskEvents: function (taskListItem, checkBoxEventHandler) {
 		console.log("binding task events...");
 
-		var checkBox = taskListItem.querySelector("input[type=checkbox");
+		var checkBox = taskListItem.querySelector("input[type=checkbox]");
 		var deleteButton = taskListItem.querySelector("button.delete");
 
 		checkBox.onchange = checkBoxEventHandler;
 		deleteButton.onclick = this.deleteTask;
+
 	},
 
 	addTask: function () {
@@ -37,7 +38,7 @@ var shoppingApp = {
 		var listItem = shoppingApp.createNewTaskElement(shoppingApp.taskInput.value);
 		
 		shoppingApp.incompleteTasksHolder.appendChild(listItem);
-		shoppingApp.bindTaskEvents(listItem, this.taskCompleted);
+		shoppingApp.bindTaskEvents(listItem, shoppingApp.taskCompleted);
 	},
 
 	createNewTaskElement: function (taskString) {
