@@ -7,12 +7,13 @@ body {
 	width: 100%;
 	font-family: sans-serif;
 	background-color: grey;
+	
 }
 
 #container {
 	margin: 0 auto;
 	padding: 0 auto;
-	text-align: center;
+	/*text-align: center;*/
 }
 section {
 	margin: 3em 0;
@@ -62,12 +63,23 @@ button {
 
 ul > li {
 	margin: 0.5em 1em;
-	float: left;
+	position: relative;
+	margin: 0 auto;
+	padding: 15px 10px;
+	border: 1px solid #000;
 }
+
+#incomplete-tasks input[type="checkbox"], #incomplete-tasks label {
+	margin: 0 5px;
+}
+
 
 .delete {
 	background-color: red;
 	color: #fff;
+	position: absolute;
+	right: 10px;
+	top: 8px;
 }
 
 #completed-tasks li {
