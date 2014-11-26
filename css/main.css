@@ -48,9 +48,10 @@ h1 {
 }
 
 input {
-	margin: 0.8em 0;
-	padding: 0.4em 0.3em;
+	margin: 0.6em 0;
+	padding: 0.2em 0.3em;
 	border-radius: 5px;
+	font-size: 1em;
 }
 input[type="checkbox"], label {
 	margin: 0 5px;
